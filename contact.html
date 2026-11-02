@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BeautyPro Academy</title>
+
+    <meta name="description"
+        content="Build your beauty career with BeautyPro Academy. Explore professional cosmetology, hair, esthetics and nail programs.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================================
+     HEADER
+================================ -->
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+
+                <!-- LOGO -->
+                <a href="index.html" class="header-logo">
+                    <img src="images/logo.png" alt="BeautyPro Academy">
+                </a>
+
+                <!-- DESKTOP NAVIGATION -->
+                <nav class="desktop-nav">
+                    <ul class="nav-menu">
+
+                        <li class="nav-item home-dropdown">
+                            <a href="#" class="nav-link">
+                                Home <i class="bi bi-chevron-down"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Home 1</a></li>
+                                <li><a href="home-2.html">Home 2</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="programs.html" class="nav-link">Programs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="instructors.html" class="nav-link">Instructors</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="student-salon.html" class="nav-link">Student Salon</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link">Dashboard</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <!-- DESKTOP ACTIONS -->
+                <div class="header-actions">
+
+                    <!-- DARK MODE -->
+                    <button class="header-icon-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="bi bi-moon"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL">
+                        <i class="bi bi-arrow-left-right"></i>
+
+                    </button>
+
+                    <!-- LOGIN -->
+                    <a href="login.html" class="btn-primary header-login">
+                        Login
+                    </a>
+
+                </div>
+
+                <!-- MOBILE MENU TOGGLE -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- MOBILE NAVIGATION -->
+        <div class="mobile-nav" id="mobileNav">
+
+            <ul class="mobile-menu">
+
+                <li class="mobile-home-dropdown">
+
+                    <button class="mobile-home-btn">
+                        Home <i class="bi bi-chevron-down"></i>
+                    </button>
+
+                    <ul class="mobile-dropdown">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                    </ul>
+
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="student-salon.html">Student Salon</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+
+            </ul>
+
+            <!-- MOBILE ACTIONS -->
+            <div class="mobile-actions">
+
+                <div class="mobile-toggle-group">
+
+                    <button class="mobile-action-btn theme-toggle">
+                        <i class="bi bi-moon"></i>
+                        <span>Dark Mode</span>
+                    </button>
+
+                    <button class="mobile-action-btn rtl-toggle">
+                        <i class="bi bi-arrow-left-right"></i>
+                        <span>RTL Mode</span>
+                    </button>
+
+                </div>
+
+                <a href="login.html" class="btn-primary mobile-login">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= ABOUT HERO SECTION ================= -->
+    <section class="bp-about-hero">
+
+        <!-- Background Image -->
+        <div class="bp-about-hero-bg">
+            <img src="images/contact-hero.jpg" alt="BeautyPro Academy">
+        </div>
+
+        <!-- Overlay -->
+        <div class="bp-about-hero-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="bp-about-hero-content">
+
+            <span class="bp-about-hero-subtitle">
+                WE'RE HERE TO HELP
+            </span>
+
+            <h1>
+                Let's Connect.<span>Your Journey Starts Here.</span>
+            </h1>
+
+            <p>
+                Have questions about our beauty programs, admissions, student salon or academy? We'd love to hear from
+                you. Reach out to our team and let us help you take the next step.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT INFORMATION SECTION -->
+    <section class="bp-contact-info-section">
+        <div class="bp-contact-info-container">
+
+            <div class="bp-contact-info-heading">
+                <span class="bp-contact-info-eyebrow">GET IN TOUCH</span>
+                <h2>We're Always Happy <span>To Hear From You</span></h2>
+                <p>
+                    Whether you're exploring our programs or need assistance,
+                    our team is here to guide you every step of the way.
+                </p>
+            </div>
+
+            <div class="bp-contact-info-grid">
+
+                <!-- Card 1 -->
+                <div class="bp-contact-info-card">
+                    <div class="bp-contact-info-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <span class="bp-contact-info-number">01</span>
+                    <h3>Visit Our Academy</h3>
+                    <p>
+                        Come visit us and explore our learning spaces,
+                        facilities and beauty training environment.
+                    </p>
+                    <a href="#" class="bp-contact-info-link">
+                        View Location <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bp-contact-info-card">
+                    <div class="bp-contact-info-icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <span class="bp-contact-info-number">02</span>
+                    <h3>Call Our Team</h3>
+                    <p>
+                        Have a question? Speak with our team for
+                        assistance with programs and admissions.
+                    </p>
+                    <a href="tel:+919876543210" class="bp-contact-info-link">
+                        +91 98765 43210 <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bp-contact-info-card">
+                    <div class="bp-contact-info-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <span class="bp-contact-info-number">03</span>
+                    <h3>Email Us</h3>
+                    <p>
+                        Send us your questions and enquiries.
+                        We'll be happy to help you find the right information.
+                    </p>
+                    <a href="mailto:hello@beautyproacademy.com" class="bp-contact-info-link">
+                        Send An Email <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bp-contact-info-card">
+                    <div class="bp-contact-info-icon">
+                        <i class="bi bi-clock"></i>
+                    </div>
+                    <span class="bp-contact-info-number">04</span>
+                    <h3>Academy Hours</h3>
+                    <p>
+                        Plan your visit during our regular academy
+                        working hours.
+                    </p>
+                    <div class="bp-contact-info-hours">
+                        <span>Monday – Saturday</span>
+                        <strong>9:00 AM – 6:00 PM</strong>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="bp-contact-form-section">
+        <div class="bp-contact-form-container">
+
+            <!-- Section Heading -->
+            <div class="bp-contact-form-heading">
+                <span class="bp-contact-form-eyebrow">LET'S TALK</span>
+                <h2>Have A Question? <span>We're Listening.</span></h2>
+                <p>
+                    Tell us what you're looking for and our team will get
+                    back to you with the information you need.
+                </p>
+            </div>
+
+            <div class="bp-contact-form-layout">
+
+                <!-- LEFT CONTACT PANEL -->
+                <div class="bp-contact-form-side">
+                    <div class="bp-contact-form-side-content">
+                        <span class="bp-contact-side-label">BEAUTYPRO ACADEMY</span>
+
+                        <h3>Let's Make Your Beauty Career Happen.</h3>
+
+                        <p>
+                            Whether you're interested in joining a program,
+                            learning more about our academy or visiting our
+                            student salon, we're just a message away.
+                        </p>
+
+                        <div class="bp-contact-side-divider"></div>
+
+                        <div class="bp-contact-side-point">
+                            <i class="bi bi-mortarboard"></i>
+                            <div>
+                                <h4>Program Enquiries</h4>
+                                <span>Find the right learning path for you.</span>
+                            </div>
+                        </div>
+
+                        <div class="bp-contact-side-point">
+                            <i class="bi bi-chat-square-text"></i>
+                            <div>
+                                <h4>Personal Assistance</h4>
+                                <span>Get answers from our academy team.</span>
+                            </div>
+                        </div>
+
+                        <div class="bp-contact-side-point">
+                            <i class="bi bi-calendar-check"></i>
+                            <div>
+                                <h4>Plan Your Visit</h4>
+                                <span>Connect with us before visiting.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bp-contact-side-decoration">
+                        <i class="bi bi-flower1"></i>
+                    </div>
+                </div>
+
+                <!-- RIGHT CONTACT FORM -->
+                <div class="bp-contact-form-card">
+
+                    <div class="bp-contact-form-card-heading">
+                        <span>YOUR MESSAGE MATTERS</span>
+                        <h3>Send Us An Enquiry</h3>
+                        <p>Fill in the details below and we'll be in touch.</p>
+                    </div>
+
+                    <form class="bp-contact-enquiry-form" action="#" method="post">
+
+                        <div class="bp-contact-input-row">
+
+                            <div class="bp-contact-field">
+                                <label for="bp-contact-name">Full Name</label>
+                                <input type="text" id="bp-contact-name" name="name" placeholder="Enter your full name"
+                                    required>
+                            </div>
+
+                            <div class="bp-contact-field">
+                                <label for="bp-contact-email">Email Address</label>
+                                <input type="email" id="bp-contact-email" name="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+
+                        </div>
+
+                        <div class="bp-contact-input-row">
+
+                            <div class="bp-contact-field">
+                                <label for="bp-contact-phone">Phone Number</label>
+                                <input type="tel" id="bp-contact-phone" name="phone"
+                                    placeholder="Enter your phone number" required>
+                            </div>
+
+                            <div class="bp-contact-field">
+                                <label for="bp-contact-type">Enquiry Type</label>
+                                <select id="bp-contact-type" name="enquiry_type" required>
+                                    <option value="" disabled selected>Select an enquiry</option>
+                                    <option value="admissions">Admissions</option>
+                                    <option value="programs">Beauty Programs</option>
+                                    <option value="student-salon">Student Salon</option>
+                                    <option value="general">General Enquiry</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="bp-contact-field">
+                            <label for="bp-contact-subject">Subject</label>
+                            <input type="text" id="bp-contact-subject" name="subject"
+                                placeholder="What is your enquiry about?" required>
+                        </div>
+
+                        <div class="bp-contact-field">
+                            <label for="bp-contact-message">Your Message</label>
+                            <textarea id="bp-contact-message" name="message" rows="5"
+                                placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="bp-contact-submit-btn">
+                            Send Your Message
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+
+                        <p class="bp-contact-form-note">
+                            <i class="bi bi-shield-check"></i>
+                            Your information will be used only to respond to your enquiry.
+                        </p>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT MAP SECTION -->
+    <section class="bp-location-section">
+        <div class="bp-location-container">
+
+            <!-- Section Heading -->
+            <div class="bp-location-heading">
+                <span class="bp-location-eyebrow">COME VISIT US</span>
+                <h2>Find Your Way <span>To Our Academy</span></h2>
+                <p>
+                    We'd love to welcome you to BeautyPro Academy.
+                    Plan a visit and explore where your beauty journey begins.
+                </p>
+            </div>
+
+            <div class="bp-location-layout">
+
+                <!-- MAP -->
+                <div class="bp-location-map">
+                    <iframe src="https://www.google.com/maps?q=YOUR+ACADEMY+ADDRESS&output=embed" width="100%"
+                        height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="BeautyPro Academy Location">
+                    </iframe>
+
+                    <div class="bp-map-label">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>BeautyPro Academy</span>
+                    </div>
+                </div>
+
+                <!-- LOCATION DETAILS -->
+                <div class="bp-location-details">
+
+                    <span class="bp-location-tag">OUR LOCATION</span>
+
+                    <h3>Visit Us In Person</h3>
+
+                    <p class="bp-location-description">
+                        Step inside our academy, meet our team and discover
+                        the learning environment designed to help you build
+                        your future in the beauty industry.
+                    </p>
+
+                    <div class="bp-location-detail-list">
+
+                        <div class="bp-location-detail-item">
+                            <div class="bp-location-detail-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Academy Address</h4>
+                                <p>Your Academy Address, City, State, PIN Code</p>
+                            </div>
+                        </div>
+
+                        <div class="bp-location-detail-item">
+                            <div class="bp-location-detail-icon">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Visiting Hours</h4>
+                                <p>Monday – Saturday</p>
+                                <span>9:00 AM – 6:00 PM</span>
+                            </div>
+                        </div>
+
+                        <div class="bp-location-detail-item">
+                            <div class="bp-location-detail-icon">
+                                <i class="bi bi-car-front"></i>
+                            </div>
+                            <div>
+                                <h4>Plan Your Visit</h4>
+                                <p>Contact our team before visiting the academy.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=YOUR+ACADEMY+ADDRESS" target="_blank"
+                        rel="noopener noreferrer" class="bp-location-directions-btn">
+                        Get Directions
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- BOTTOM STRIP -->
+            <div class="bp-location-bottom">
+                <div class="bp-location-bottom-icon">
+                    <i class="bi bi-chat-dots"></i>
+                </div>
+
+                <div class="bp-location-bottom-text">
+                    <h4>Need Help Finding Us?</h4>
+                    <p>Get in touch with our team for directions and visit assistance.</p>
+                </div>
+
+                <a href="tel:+910000000000" class="bp-location-call-btn">
+                    Contact Our Team
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================
+     FOOTER
+===================================== -->
+
+    <footer class="main-footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <!-- BRAND COLUMN -->
+                <div class="footer-column footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="BeautyPro Academy">
+                    </a>
+
+                    <p>
+                        Discover your passion for beauty and turn your
+                        creativity into a successful career with
+                        professional beauty education.
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Pinterest">
+                            <i class="bi bi-pinterest"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK LINKS -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul class="footer-links">
+
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="student-salon.html">Student Salon</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- OUR PROGRAMS -->
+                <div class="footer-column">
+
+                    <h3>Our Programs</h3>
+
+                    <ul class="footer-links">
+
+                        <li><a href="programs.html">Hair Styling</a></li>
+                        <li><a href="programs.html">Esthetics</a></li>
+                        <li><a href="programs.html">Nail Technology</a></li>
+                        <li><a href="programs.html">Makeup Artistry</a></li>
+                        <li><a href="programs.html">Cosmetology</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- CONTACT -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Get In Touch</h3>
+
+                    <ul class="contact-list">
+
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>123 Beauty Avenue, Your City</span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <a href="tel:+1234567890">+1 234 567 890</a>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <a href="mailto:info@beautypro.com">
+                                info@beautypro.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-clock"></i>
+                            <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- FOOTER BOTTOM -->
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 BeautyPro Academy. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

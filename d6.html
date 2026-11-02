@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BeautyPro Academy</title>
+
+    <meta name="description"
+        content="Build your beauty career with BeautyPro Academy. Explore professional cosmetology, hair, esthetics and nail programs.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <!-- Sidebar Logo -->
+        <div class="sidebar-brand">
+            <a href="index.html">
+                <img src="images/logo.png" alt="BeautyPro Academy">
+            </a>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar-navigation">
+
+            <a href="dashboard.html" class="sidebar-link">
+                <i class="bi bi-grid-1x2"></i>
+                <span>Dashboard Overview</span>
+            </a>
+
+            <a href="d2.html" class="sidebar-link">
+                <i class="bi bi-mortarboard"></i>
+                <span>My Programs</span>
+            </a>
+
+            <a href="d3.html" class="sidebar-link">
+                <i class="bi bi-clock-history"></i>
+                <span>My Required Hours</span>
+            </a>
+
+            <a href="d4.html" class="sidebar-link">
+                <i class="bi bi-calendar3"></i>
+                <span>Schedule</span>
+            </a>
+
+            <a href="d5.html" class="sidebar-link">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>Licensing Exam Prep</span>
+            </a>
+
+            <a href="d6.html" class="sidebar-link active">
+                <i class="bi bi-credit-card"></i>
+                <span>Payments</span>
+            </a>
+
+        </nav>
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            <button type="button" class="sidebar-logout" id="logoutButton">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- Main Area -->
+    <div class="dashboard-main" id="dashboardMain">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu"
+                    aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="header-title">
+                    <h1>Payments</h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <!-- Notifications -->
+                <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+                    <i class="bi bi-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+
+                <!-- Dark Mode -->
+                <button type="button" class="header-icon-btn theme-toggle" aria-label="Toggle dark mode"
+                    aria-pressed="false">
+                    <i class="bi bi-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="header-icon-btn rtl-toggle" aria-label="Toggle RTL direction"
+                    aria-pressed="false">
+                    <i class="bi bi-arrow-left-right"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="header-profile">
+
+                    <div class="profile-avatar">
+                        <img src="images/student-profile.jpg" alt="Jessica Davis Profile">
+                    </div>
+
+                    <div class="profile-details">
+                        <h4>Jessica Davis</h4>
+                        <p>Beauty Student</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="dashboard-content">
+
+            <!-- SECTION 1: PAYMENT OVERVIEW -->
+            <section class="pay-section">
+
+                <div class="pay-heading">
+                    <div>
+                        <span class="pay-eyebrow">YOUR ACCOUNT</span>
+                        <h2>Payment Overview</h2>
+                        <p>Keep track of your program fees, completed payments and upcoming dues.</p>
+                    </div>
+                    <span class="pay-account-status">
+                        <i class="bi bi-shield-check"></i> Account Overview
+                    </span>
+                </div>
+
+                <div class="pay-stats-grid">
+
+                    <div class="pay-stat-card">
+                        <div class="pay-stat-icon"><i class="bi bi-wallet2"></i></div>
+                        <div>
+                            <span>Total Program Fee</span>
+                            <h3>₹60,000</h3>
+                            <small>Professional Cosmetology</small>
+                        </div>
+                    </div>
+
+                    <div class="pay-stat-card">
+                        <div class="pay-stat-icon"><i class="bi bi-check-circle"></i></div>
+                        <div>
+                            <span>Total Amount Paid</span>
+                            <h3>₹35,000</h3>
+                            <small>Payments received</small>
+                        </div>
+                    </div>
+
+                    <div class="pay-stat-card">
+                        <div class="pay-stat-icon"><i class="bi bi-hourglass-split"></i></div>
+                        <div>
+                            <span>Remaining Balance</span>
+                            <h3>₹25,000</h3>
+                            <small>Amount yet to be paid</small>
+                        </div>
+                    </div>
+
+                    <div class="pay-stat-card">
+                        <div class="pay-stat-icon"><i class="bi bi-calendar-event"></i></div>
+                        <div>
+                            <span>Next Payment Due</span>
+                            <h3>₹10,000</h3>
+                            <small>Due: 15 Nov 2026</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pay-overview-layout">
+
+                    <div class="pay-progress-card">
+                        <div class="pay-card-heading">
+                            <div>
+                                <span class="pay-eyebrow">FEE SUMMARY</span>
+                                <h3>Program Fee Progress</h3>
+                            </div>
+                            <span class="pay-progress-percent">58.3%</span>
+                        </div>
+
+                        <div class="pay-amount-row">
+                            <strong>₹35,000</strong>
+                            <span>of ₹60,000 paid</span>
+                        </div>
+
+                        <div class="pay-progress-track">
+                            <div class="pay-progress-fill" style="width:58.33%"></div>
+                        </div>
+
+                        <div class="pay-progress-labels">
+                            <span><i class="pay-dot pay-dot-paid"></i> Paid: ₹35,000</span>
+                            <span><i class="pay-dot pay-dot-pending"></i> Remaining: ₹25,000</span>
+                        </div>
+
+                        <div class="pay-progress-note">
+                            <i class="bi bi-info-circle"></i>
+                            Your fee balance is based on the sample program payment schedule.
+                        </div>
+                    </div>
+
+                    <div class="pay-due-card">
+                        <div class="pay-due-top">
+                            <div class="pay-due-icon"><i class="bi bi-calendar2-check"></i></div>
+                            <span class="pay-due-badge">Upcoming</span>
+                        </div>
+
+                        <span class="pay-eyebrow">NEXT INSTALLMENT</span>
+                        <h3>₹10,000</h3>
+                        <p>Professional Cosmetology Program</p>
+
+                        <div class="pay-due-details">
+                            <div>
+                                <span>Due Date</span>
+                                <strong>15 November 2026</strong>
+                            </div>
+                            <div>
+                                <span>Installment</span>
+                                <strong>3 of 6</strong>
+                            </div>
+                        </div>
+
+                        <div class="pay-due-reminder">
+                            <i class="bi bi-bell"></i>
+                            Remember to complete your payment before the due date.
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 2: PAYMENT HISTORY -->
+            <section class="pay-section">
+
+                <div class="pay-heading">
+                    <div>
+                        <span class="pay-eyebrow">TRANSACTION RECORDS</span>
+                        <h2>Payment History</h2>
+                        <p>View your previous payments and check the status of each transaction.</p>
+                    </div>
+                </div>
+
+                <div class="pay-history-card">
+
+                    <div class="pay-history-toolbar">
+
+                        <div class="pay-search-box">
+                            <i class="bi bi-search"></i>
+                            <input type="text" id="paySearchInput"
+                                placeholder="Search transaction or payment method...">
+                        </div>
+
+                        <select id="payStatusFilter" class="pay-filter-select">
+                            <option value="all">All Payments</option>
+                            <option value="completed">Completed</option>
+                            <option value="pending">Pending</option>
+                            <option value="failed">Failed</option>
+                        </select>
+
+                    </div>
+
+                    <div class="pay-table-wrapper">
+                        <table class="pay-table">
+                            <thead>
+                                <tr>
+                                    <th>Transaction ID</th>
+                                    <th>Payment Date</th>
+                                    <th>Description</th>
+                                    <th>Payment Method</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Receipt</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="payHistoryBody">
+
+                                <tr data-status="completed">
+                                    <td><strong>BP-2026-001</strong></td>
+                                    <td>05 Sep 2026</td>
+                                    <td>Program Admission Fee</td>
+                                    <td><i class="bi bi-bank pay-method-icon"></i> UPI</td>
+                                    <td class="pay-amount">₹10,000</td>
+                                    <td><span class="pay-status completed">Completed</span></td>
+                                    <td>
+                                        <button class="pay-download-btn" data-receipt="BP-2026-001"
+                                            data-date="05 Sep 2026" data-description="Program Admission Fee"
+                                            data-method="UPI" data-amount="10000">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr data-status="completed">
+                                    <td><strong>BP-2026-002</strong></td>
+                                    <td>20 Sep 2026</td>
+                                    <td>First Installment</td>
+                                    <td><i class="bi bi-credit-card pay-method-icon"></i> Card</td>
+                                    <td class="pay-amount">₹10,000</td>
+                                    <td><span class="pay-status completed">Completed</span></td>
+                                    <td>
+                                        <button class="pay-download-btn" data-receipt="BP-2026-002"
+                                            data-date="20 Sep 2026" data-description="First Installment"
+                                            data-method="Card" data-amount="10000">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr data-status="completed">
+                                    <td><strong>BP-2026-003</strong></td>
+                                    <td>05 Oct 2026</td>
+                                    <td>Second Installment</td>
+                                    <td><i class="bi bi-phone pay-method-icon"></i> Net Banking</td>
+                                    <td class="pay-amount">₹10,000</td>
+                                    <td><span class="pay-status completed">Completed</span></td>
+                                    <td>
+                                        <button class="pay-download-btn" data-receipt="BP-2026-003"
+                                            data-date="05 Oct 2026" data-description="Second Installment"
+                                            data-method="Net Banking" data-amount="10000">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr data-status="completed">
+                                    <td><strong>BP-2026-004</strong></td>
+                                    <td>20 Oct 2026</td>
+                                    <td>Practical Training Fee</td>
+                                    <td><i class="bi bi-bank pay-method-icon"></i> UPI</td>
+                                    <td class="pay-amount">₹5,000</td>
+                                    <td><span class="pay-status completed">Completed</span></td>
+                                    <td>
+                                        <button class="pay-download-btn" data-receipt="BP-2026-004"
+                                            data-date="20 Oct 2026" data-description="Practical Training Fee"
+                                            data-method="UPI" data-amount="5000">
+                                            <i class="bi bi-download"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr data-status="pending">
+                                    <td><strong>BP-2026-005</strong></td>
+                                    <td>15 Nov 2026</td>
+                                    <td>Third Installment</td>
+                                    <td><i class="bi bi-clock pay-method-icon"></i> Not Paid</td>
+                                    <td class="pay-amount">₹10,000</td>
+                                    <td><span class="pay-status pending">Upcoming</span></td>
+                                    <td><span class="pay-no-receipt">—</span></td>
+                                </tr>
+
+                                <tr data-status="pending">
+                                    <td><strong>BP-2026-006</strong></td>
+                                    <td>30 Nov 2026</td>
+                                    <td>Fourth Installment</td>
+                                    <td><i class="bi bi-clock pay-method-icon"></i> Not Paid</td>
+                                    <td class="pay-amount">₹5,000</td>
+                                    <td><span class="pay-status pending">Upcoming</span></td>
+                                    <td><span class="pay-no-receipt">—</span></td>
+                                </tr>
+
+                                <tr id="payNoResults" style="display:none">
+                                    <td colspan="7" class="pay-empty-state">
+                                        <i class="bi bi-search"></i>
+                                        <strong>No transactions found</strong>
+                                        <span>Try changing your search or status filter.</span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="pay-history-footer">
+                        <span>Showing <strong id="payVisibleCount">6</strong> transactions</span>
+                        <span><i class="bi bi-lock"></i> Your transaction details are private.</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 3: INVOICES AND RECEIPTS -->
+            <section class="pay-section">
+
+                <div class="pay-heading">
+                    <div>
+                        <span class="pay-eyebrow">YOUR DOCUMENTS</span>
+                        <h2>Invoices & Receipts</h2>
+                        <p>Access your payment records and download receipts for completed transactions.</p>
+                    </div>
+                </div>
+
+                <div class="pay-documents-layout">
+
+                    <div class="pay-documents-card">
+
+                        <div class="pay-documents-header">
+                            <div>
+                                <h3>Available Payment Receipts</h3>
+                                <p>Download a copy for your personal records.</p>
+                            </div>
+                            <span class="pay-documents-count">4 Receipts</span>
+                        </div>
+
+                        <div class="pay-document-list">
+
+                            <div class="pay-document-item">
+                                <div class="pay-document-icon">
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                </div>
+                                <div class="pay-document-info">
+                                    <strong>Admission Fee Receipt</strong>
+                                    <span>BP-2026-001 · 05 September 2026</span>
+                                </div>
+                                <div class="pay-document-amount">₹10,000</div>
+                                <button class="pay-document-download" data-receipt="BP-2026-001" data-date="05 Sep 2026"
+                                    data-description="Program Admission Fee" data-method="UPI" data-amount="10000">
+                                    <i class="bi bi-download"></i>
+                                    <span>Download</span>
+                                </button>
+                            </div>
+
+                            <div class="pay-document-item">
+                                <div class="pay-document-icon">
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                </div>
+                                <div class="pay-document-info">
+                                    <strong>First Installment Receipt</strong>
+                                    <span>BP-2026-002 · 20 September 2026</span>
+                                </div>
+                                <div class="pay-document-amount">₹10,000</div>
+                                <button class="pay-document-download" data-receipt="BP-2026-002" data-date="20 Sep 2026"
+                                    data-description="First Installment" data-method="Card" data-amount="10000">
+                                    <i class="bi bi-download"></i>
+                                    <span>Download</span>
+                                </button>
+                            </div>
+
+                            <div class="pay-document-item">
+                                <div class="pay-document-icon">
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                </div>
+                                <div class="pay-document-info">
+                                    <strong>Second Installment Receipt</strong>
+                                    <span>BP-2026-003 · 05 October 2026</span>
+                                </div>
+                                <div class="pay-document-amount">₹10,000</div>
+                                <button class="pay-document-download" data-receipt="BP-2026-003" data-date="05 Oct 2026"
+                                    data-description="Second Installment" data-method="Net Banking" data-amount="10000">
+                                    <i class="bi bi-download"></i>
+                                    <span>Download</span>
+                                </button>
+                            </div>
+
+                            <div class="pay-document-item">
+                                <div class="pay-document-icon">
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                </div>
+                                <div class="pay-document-info">
+                                    <strong>Practical Training Fee Receipt</strong>
+                                    <span>BP-2026-004 · 20 October 2026</span>
+                                </div>
+                                <div class="pay-document-amount">₹5,000</div>
+                                <button class="pay-document-download" data-receipt="BP-2026-004" data-date="20 Oct 2026"
+                                    data-description="Practical Training Fee" data-method="UPI" data-amount="5000">
+                                    <i class="bi bi-download"></i>
+                                    <span>Download</span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="pay-help-card">
+
+                        <div class="pay-help-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+
+                        <span class="pay-eyebrow">NEED ASSISTANCE?</span>
+                        <h3>Payment Support</h3>
+
+                        <p>Have a question about your fees, a transaction or a missing receipt? Contact the academy
+                            administration team.</p>
+
+                        <div class="pay-help-detail">
+                            <i class="bi bi-envelope"></i>
+                            <span>Contact your academy administration</span>
+                        </div>
+
+                        <div class="pay-help-detail">
+                            <i class="bi bi-receipt"></i>
+                            <span>Keep your transaction ID ready when requesting support.</span>
+                        </div>
+
+                        <a href="contact.html" class="pay-support-btn">
+                            Contact Support <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="logout-modal" id="logoutModal" aria-hidden="true">
+
+        <div class="logout-modal-backdrop"></div>
+
+        <div class="logout-modal-card" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+
+            <div class="logout-modal-icon">
+                <i class="bi bi-box-arrow-right"></i>
+            </div>
+
+            <h2 id="logoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to logout from your account?</p>
+
+            <div class="logout-modal-actions">
+                <button type="button" class="logout-no" id="cancelLogout">
+                    No, Stay
+                </button>
+
+                <button type="button" class="logout-yes" id="confirmLogout">
+                    Yes, Logout
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

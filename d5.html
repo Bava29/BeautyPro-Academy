@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BeautyPro Academy</title>
+
+    <meta name="description"
+        content="Build your beauty career with BeautyPro Academy. Explore professional cosmetology, hair, esthetics and nail programs.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <!-- Sidebar Logo -->
+        <div class="sidebar-brand">
+            <a href="index.html">
+                <img src="images/logo.png" alt="BeautyPro Academy">
+            </a>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar-navigation">
+
+            <a href="dashboard.html" class="sidebar-link">
+                <i class="bi bi-grid-1x2"></i>
+                <span>Dashboard Overview</span>
+            </a>
+
+            <a href="d2.html" class="sidebar-link">
+                <i class="bi bi-mortarboard"></i>
+                <span>My Programs</span>
+            </a>
+
+            <a href="d3.html" class="sidebar-link">
+                <i class="bi bi-clock-history"></i>
+                <span>My Required Hours</span>
+            </a>
+
+            <a href="d4.html" class="sidebar-link">
+                <i class="bi bi-calendar3"></i>
+                <span>Schedule</span>
+            </a>
+
+            <a href="d5.html" class="sidebar-link active">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>Licensing Exam Prep</span>
+            </a>
+
+            <a href="d6.html" class="sidebar-link">
+                <i class="bi bi-credit-card"></i>
+                <span>Payments</span>
+            </a>
+
+        </nav>
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            <button type="button" class="sidebar-logout" id="logoutButton">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- Main Area -->
+    <div class="dashboard-main" id="dashboardMain">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu"
+                    aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="header-title">
+                    <h1>Licensing Exam Prep</h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <!-- Notifications -->
+                <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+                    <i class="bi bi-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+
+                <!-- Dark Mode -->
+                <button type="button" class="header-icon-btn theme-toggle" aria-label="Toggle dark mode"
+                    aria-pressed="false">
+                    <i class="bi bi-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="header-icon-btn rtl-toggle" aria-label="Toggle RTL direction"
+                    aria-pressed="false">
+                    <i class="bi bi-arrow-left-right"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="header-profile">
+
+                    <div class="profile-avatar">
+                        <img src="images/student-profile.jpg" alt="Jessica Davis Profile">
+                    </div>
+
+                    <div class="profile-details">
+                        <h4>Jessica Davis</h4>
+                        <p>Beauty Student</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="dashboard-content">
+
+            <!-- SECTION 1: EXAM READINESS OVERVIEW -->
+            <section class="lep-section lep-overview-section">
+
+                <div class="lep-section-heading">
+                    <div>
+                        <span class="lep-eyebrow">YOUR EXAM JOURNEY</span>
+                        <h2>Exam Readiness Overview</h2>
+                        <p>Track your progress and stay on the path to becoming a licensed beauty professional.</p>
+                    </div>
+                    <span class="lep-status-badge">
+                        <i class="bi bi-hourglass-split"></i>
+                        Preparation In Progress
+                    </span>
+                </div>
+
+                <div class="lep-stats-grid">
+
+                    <div class="lep-stat-card">
+                        <div class="lep-stat-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <div>
+                            <span>Overall Progress</span>
+                            <h3>65%</h3>
+                            <small>Exam preparation</small>
+                        </div>
+                    </div>
+
+                    <div class="lep-stat-card">
+                        <div class="lep-stat-icon"><i class="bi bi-journal-check"></i></div>
+                        <div>
+                            <span>Topics Completed</span>
+                            <h3>13/20</h3>
+                            <small>Study topics covered</small>
+                        </div>
+                    </div>
+
+                    <div class="lep-stat-card">
+                        <div class="lep-stat-icon"><i class="bi bi-clipboard2-check"></i></div>
+                        <div>
+                            <span>Practice Test Score</span>
+                            <h3>78%</h3>
+                            <small>Latest practice result</small>
+                        </div>
+                    </div>
+
+                    <div class="lep-stat-card">
+                        <div class="lep-stat-icon"><i class="bi bi-calendar-check"></i></div>
+                        <div>
+                            <span>Study Streak</span>
+                            <h3>18 Days</h3>
+                            <small>Active study days</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="lep-readiness-card">
+                    <div class="lep-readiness-content">
+                        <div>
+                            <span class="lep-eyebrow">YOUR READINESS</span>
+                            <h3>You're making great progress!</h3>
+                            <p>Continue reviewing your remaining topics and practicing regularly to strengthen your exam
+                                preparation.</p>
+                        </div>
+
+                        <div class="lep-readiness-number">
+                            <strong>65%</strong>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="lep-progress-track">
+                        <div class="lep-progress-fill" style="width:65%"></div>
+                    </div>
+
+                    <div class="lep-readiness-footer">
+                        <span><i class="bi bi-check-circle-fill"></i> 13 Topics Completed</span>
+                        <span>7 Topics Remaining</span>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 2: STUDY MATERIALS AND PRACTICE -->
+            <section class="lep-section lep-study-section" id="lep-study-materials">
+
+                <div class="lep-section-heading">
+                    <div>
+                        <span class="lep-eyebrow">LEARN & PRACTICE</span>
+                        <h2>Study Materials & Practice Tests</h2>
+                        <p>Review your core cosmetology subjects and test your knowledge.</p>
+                    </div>
+                </div>
+
+                <div class="lep-study-topics">
+
+                    <div class="lep-topic-card">
+                        <div class="lep-topic-icon"><i class="bi bi-shield-check"></i></div>
+                        <div class="lep-topic-info">
+                            <div class="lep-topic-title">
+                                <h3>Sanitation & Safety</h3>
+                                <span class="lep-topic-done">Completed</span>
+                            </div>
+                            <p>Disinfection, sanitation procedures and workplace safety.</p>
+                            <div class="lep-topic-progress">
+                                <div><span>Progress</span><strong>100%</strong></div>
+                                <div class="lep-progress-track">
+                                    <div class="lep-progress-fill" style="width:100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lep-topic-card">
+                        <div class="lep-topic-icon"><i class="bi bi-person-hearts"></i></div>
+                        <div class="lep-topic-info">
+                            <div class="lep-topic-title">
+                                <h3>Skin Science & Care</h3>
+                                <span class="lep-topic-done">Completed</span>
+                            </div>
+                            <p>Skin types, conditions, anatomy and skincare procedures.</p>
+                            <div class="lep-topic-progress">
+                                <div><span>Progress</span><strong>100%</strong></div>
+                                <div class="lep-progress-track">
+                                    <div class="lep-progress-fill" style="width:100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lep-topic-card">
+                        <div class="lep-topic-icon"><i class="bi bi-scissors"></i></div>
+                        <div class="lep-topic-info">
+                            <div class="lep-topic-title">
+                                <h3>Hair Care & Styling</h3>
+                                <span class="lep-topic-active">In Progress</span>
+                            </div>
+                            <p>Hair structure, treatments, styling and hair care methods.</p>
+                            <div class="lep-topic-progress">
+                                <div><span>Progress</span><strong>75%</strong></div>
+                                <div class="lep-progress-track">
+                                    <div class="lep-progress-fill" style="width:75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lep-topic-card">
+                        <div class="lep-topic-icon"><i class="bi bi-brush"></i></div>
+                        <div class="lep-topic-info">
+                            <div class="lep-topic-title">
+                                <h3>Makeup & Application</h3>
+                                <span class="lep-topic-active">In Progress</span>
+                            </div>
+                            <p>Makeup techniques, product knowledge and application.</p>
+                            <div class="lep-topic-progress">
+                                <div><span>Progress</span><strong>60%</strong></div>
+                                <div class="lep-progress-track">
+                                    <div class="lep-progress-fill" style="width:60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lep-topic-card">
+                        <div class="lep-topic-icon"><i class="bi bi-hand-index-thumb"></i></div>
+                        <div class="lep-topic-info">
+                            <div class="lep-topic-title">
+                                <h3>Nail Technology</h3>
+                                <span class="lep-topic-upcoming">Upcoming</span>
+                            </div>
+                            <p>Nail anatomy, manicure, pedicure and nail care.</p>
+                            <div class="lep-topic-progress">
+                                <div><span>Progress</span><strong>0%</strong></div>
+                                <div class="lep-progress-track">
+                                    <div class="lep-progress-fill" style="width:0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lep-topic-card">
+                        <div class="lep-topic-icon"><i class="bi bi-briefcase"></i></div>
+                        <div class="lep-topic-info">
+                            <div class="lep-topic-title">
+                                <h3>Professional Practices</h3>
+                                <span class="lep-topic-upcoming">Upcoming</span>
+                            </div>
+                            <p>Client communication, consultation and professional ethics.</p>
+                            <div class="lep-topic-progress">
+                                <div><span>Progress</span><strong>0%</strong></div>
+                                <div class="lep-progress-track">
+                                    <div class="lep-progress-fill" style="width:0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- FULL WIDTH QUIZ -->
+                <div class="lep-quiz-panel">
+
+                    <div class="lep-quiz-header">
+                        <div>
+                            <span class="lep-eyebrow">TEST YOUR KNOWLEDGE</span>
+                            <h3>Quick Practice Quiz</h3>
+                            <p>Answer these questions to check your cosmetology knowledge.</p>
+                        </div>
+                        <div class="lep-quiz-icon"><i class="bi bi-patch-question"></i></div>
+                    </div>
+
+                    <div id="lepQuizArea">
+
+                        <div class="lep-quiz-meta">
+                            <span id="lepQuestionNumber">Question 1 of 5</span>
+                            <span id="lepQuizPercent">0% Completed</span>
+                        </div>
+
+                        <div class="lep-progress-track">
+                            <div class="lep-progress-fill" id="lepQuizProgressFill" style="width:0%"></div>
+                        </div>
+
+                        <h4 id="lepQuestionText" class="lep-question-text"></h4>
+
+                        <div id="lepAnswerOptions" class="lep-answer-options"></div>
+
+                        <div id="lepAnswerFeedback" class="lep-answer-feedback"></div>
+
+                        <div class="lep-quiz-actions">
+                            <button type="button" id="lepNextQuestion" class="lep-primary-btn" disabled>
+                                Next Question <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div id="lepQuizResult" class="lep-quiz-result" style="display:none">
+                        <div class="lep-result-icon"><i class="bi bi-trophy"></i></div>
+                        <h3>Quiz Completed!</h3>
+                        <div class="lep-final-score"><span id="lepFinalScore">0/5</span></div>
+                        <p id="lepResultMessage"></p>
+                        <button type="button" id="lepRetryQuiz" class="lep-primary-btn">
+                            <i class="bi bi-arrow-repeat"></i> Try Again
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 3: EXAM PREPARATION CHECKLIST -->
+            <section class="lep-section lep-checklist-section">
+
+                <div class="lep-section-heading">
+                    <div>
+                        <span class="lep-eyebrow">STAY ORGANIZED</span>
+                        <h2>Exam Preparation Checklist</h2>
+                        <p>Complete these important steps before your licensing examination.</p>
+                    </div>
+                </div>
+
+                <div class="lep-checklist-layout">
+
+                    <div class="lep-checklist-card">
+
+                        <div class="lep-checklist-top">
+                            <div>
+                                <h3>Your Preparation Tasks</h3>
+                                <p>Mark each task as you complete it.</p>
+                            </div>
+                            <span class="lep-task-counter"><span id="lepTaskCount">0</span>/7 Completed</span>
+                        </div>
+
+                        <div class="lep-checklist-grid">
+
+                            <label class="lep-check-item">
+                                <input type="checkbox" data-task="lep-revise">
+                                <span class="lep-check-custom"><i class="bi bi-check"></i></span>
+                                <span class="lep-check-text">
+                                    <strong>Revise Core Subjects</strong>
+                                    <small>Review all important cosmetology topics.</small>
+                                </span>
+                            </label>
+
+                            <label class="lep-check-item">
+                                <input type="checkbox" data-task="lep-safety">
+                                <span class="lep-check-custom"><i class="bi bi-check"></i></span>
+                                <span class="lep-check-text">
+                                    <strong>Review Safety Procedures</strong>
+                                    <small>Understand sanitation and disinfection.</small>
+                                </span>
+                            </label>
+
+                            <label class="lep-check-item">
+                                <input type="checkbox" data-task="lep-weak">
+                                <span class="lep-check-custom"><i class="bi bi-check"></i></span>
+                                <span class="lep-check-text">
+                                    <strong>Practice Weak Topics</strong>
+                                    <small>Focus on subjects that need improvement.</small>
+                                </span>
+                            </label>
+
+                            <label class="lep-check-item">
+                                <input type="checkbox" data-task="lep-practice">
+                                <span class="lep-check-custom"><i class="bi bi-check"></i></span>
+                                <span class="lep-check-text">
+                                    <strong>Complete Practice Tests</strong>
+                                    <small>Take mock tests and review your answers.</small>
+                                </span>
+                            </label>
+
+                            <label class="lep-check-item">
+                                <input type="checkbox" data-task="lep-authority">
+                                <span class="lep-check-custom"><i class="bi bi-check"></i></span>
+                                <span class="lep-check-text">
+                                    <strong>Check Licensing Requirements</strong>
+                                    <small>Confirm the official examination requirements.</small>
+                                </span>
+                            </label>
+
+                            <label class="lep-check-item">
+                                <input type="checkbox" data-task="lep-id">
+                                <span class="lep-check-custom"><i class="bi bi-check"></i></span>
+                                <span class="lep-check-text">
+                                    <strong>Prepare Required Documents</strong>
+                                    <small>Keep identification and required documents ready.</small>
+                                </span>
+                            </label>
+
+                            <label class="lep-check-item">
+                                <input type="checkbox" data-task="lep-location">
+                                <span class="lep-check-custom"><i class="bi bi-check"></i></span>
+                                <span class="lep-check-text">
+                                    <strong>Confirm Exam Details</strong>
+                                    <small>Check the examination date and location.</small>
+                                </span>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="lep-checklist-summary">
+
+                        <div class="lep-summary-icon"><i class="bi bi-clipboard2-check"></i></div>
+
+                        <span class="lep-eyebrow">YOUR PROGRESS</span>
+                        <h3>Preparation Summary</h3>
+
+                        <div class="lep-summary-number">
+                            <strong id="lepTaskProgress">0%</strong>
+                            <span>Tasks Completed</span>
+                        </div>
+
+                        <div class="lep-progress-track">
+                            <div class="lep-progress-fill" id="lepTaskProgressFill" style="width:0%"></div>
+                        </div>
+
+                        <p>Stay consistent with your preparation. Complete every task to keep your exam journey
+                            organized.</p>
+
+                        <div class="lep-summary-tip">
+                            <i class="bi bi-lightbulb"></i>
+                            <span>Study a little every day and revisit topics that need more practice.</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="logout-modal" id="logoutModal" aria-hidden="true">
+
+        <div class="logout-modal-backdrop"></div>
+
+        <div class="logout-modal-card" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+
+            <div class="logout-modal-icon">
+                <i class="bi bi-box-arrow-right"></i>
+            </div>
+
+            <h2 id="logoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to logout from your account?</p>
+
+            <div class="logout-modal-actions">
+                <button type="button" class="logout-no" id="cancelLogout">
+                    No, Stay
+                </button>
+
+                <button type="button" class="logout-yes" id="confirmLogout">
+                    Yes, Logout
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

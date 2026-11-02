@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BeautyPro Academy</title>
+
+  <meta name="description"
+    content="Build your beauty career with BeautyPro Academy. Explore professional cosmetology, hair, esthetics and nail programs.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body class="auth-page">
+
+  <!-- Header Controls -->
+  <header class="auth-header">
+    <div class="auth-controls">
+
+      <button type="button" class="auth-control-btn theme-toggle" aria-label="Toggle dark mode">
+        <i class="bi bi-moon"></i>
+        <span>Dark Mode</span>
+      </button>
+
+      <button type="button" class="auth-control-btn rtl-toggle" aria-label="Toggle RTL direction">
+        <i class="bi bi-arrow-left-right"></i>
+        <span>RTL</span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Register Main -->
+  <main class="auth-main register-main">
+
+    <div class="auth-card register-card">
+
+      <!-- Logo -->
+      <a href="index.html" class="auth-logo">
+        <img src="images/logo.png" alt="BeautyPro Academy">
+      </a>
+
+      <!-- Heading -->
+      <div class="auth-heading">
+        <span class="auth-eyebrow">JOIN OUR ACADEMY</span>
+
+        <h1>Create Your Account</h1>
+
+        <p>
+          Begin your journey towards a beautiful and successful career.
+        </p>
+      </div>
+
+      <!-- Register Form -->
+      <form class="auth-form register-form" id="registerForm">
+
+        <!-- Full Name -->
+        <div class="auth-field">
+          <label for="registerName">Full Name</label>
+
+          <div class="auth-input-wrap">
+            <i class="bi bi-person auth-input-icon"></i>
+
+            <input type="text" id="registerName" name="fullname" placeholder="Enter your full name" autocomplete="name"
+              required>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="auth-field">
+          <label for="registerEmail">Email Address</label>
+
+          <div class="auth-input-wrap">
+            <i class="bi bi-envelope auth-input-icon"></i>
+
+            <input type="email" id="registerEmail" name="email" placeholder="Enter your email address"
+              autocomplete="email" required>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="auth-field">
+          <label for="registerPhone">Phone Number</label>
+
+          <div class="auth-input-wrap">
+            <i class="bi bi-telephone auth-input-icon"></i>
+
+            <input type="tel" id="registerPhone" name="phone" placeholder="Enter your phone number" autocomplete="tel"
+              inputmode="tel" required>
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="auth-field">
+          <label for="registerPassword">Password</label>
+
+          <div class="auth-input-wrap">
+            <i class="bi bi-lock auth-input-icon"></i>
+
+            <input type="password" id="registerPassword" name="password" placeholder="Create a password"
+              autocomplete="new-password" minlength="8" required>
+
+            <button type="button" class="password-toggle" data-target="registerPassword" aria-label="Show password"
+              aria-pressed="false">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="auth-field">
+          <label for="confirmPassword">Confirm Password</label>
+
+          <div class="auth-input-wrap">
+            <i class="bi bi-lock-fill auth-input-icon"></i>
+
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password"
+              autocomplete="new-password" minlength="8" required>
+
+            <button type="button" class="password-toggle" data-target="confirmPassword" aria-label="Show password"
+              aria-pressed="false">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Terms -->
+        <div class="register-terms">
+          <label class="remember-option">
+            <input type="checkbox" id="termsCheckbox" required>
+            <span>
+              I agree to the
+              <a href="terms.html">Terms & Conditions</a>
+              and
+              <a href="privacy.html">Privacy Policy</a>.
+            </span>
+          </label>
+        </div>
+
+        <!-- Register Button -->
+        <button type="submit" class="auth-submit-btn">
+          Create Account
+          <i class="bi bi-arrow-right"></i>
+        </button>
+
+      </form>
+
+      <!-- Divider -->
+      <div class="auth-divider">
+        <span></span>
+        <p>OR CONTINUE WITH</p>
+        <span></span>
+      </div>
+
+      <!-- Social Login -->
+      <div class="auth-social">
+
+        <!-- Facebook -->
+        <button type="button" class="social-btn facebook-btn" aria-label="Continue with Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#1877F2"
+              d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.97h-1.513c-1.49 0-1.956.93-1.956 1.885v2.266h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073Z" />
+          </svg>
+          <span>Facebook</span>
+        </button>
+
+        <!-- Apple -->
+        <button type="button" class="social-btn apple-btn" aria-label="Continue with Apple">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor"
+              d="M16.365 1.43c0 1.14-.416 2.203-1.247 3.188-.998 1.17-2.204 1.844-3.512 1.737a3.57 3.57 0 0 1-.027-.43c0-1.094.476-2.265 1.32-3.22.421-.484.958-.887 1.61-1.21.652-.323 1.268-.502 1.848-.535.006.157.008.314.008.47ZM20.84 17.66c-.365.84-.798 1.615-1.3 2.327-.684.974-1.243 1.65-1.674 2.028-.669.62-1.386.937-2.154.955-.55 0-1.212-.157-1.985-.476-.776-.318-1.489-.476-2.14-.476-.683 0-1.416.158-2.2.476-.785.319-1.418.487-1.902.504-.737.032-1.47-.294-2.2-.983-.466-.41-1.05-1.11-1.75-2.1-.752-1.06-1.37-2.29-1.852-3.688-.518-1.513-.777-2.978-.777-4.394 0-1.625.351-3.026 1.054-4.201.552-.943 1.284-1.688 2.2-2.237a5.93 5.93 0 0 1 3.002-.843c.59 0 1.364.183 2.323.54.958.36 1.573.54 1.844.54.203 0 .886-.212 2.044-.635 1.097-.396 2.023-.56 2.777-.495 2.053.166 3.605.975 4.65 2.43-1.835 1.112-2.744 2.667-2.725 4.66.016 1.554.576 2.846 1.677 3.87.5.474 1.058.84 1.675 1.098-.134.388-.288.77-.462 1.145Z" />
+          </svg>
+          <span>Apple</span>
+        </button>
+
+        <!-- Google -->
+        <button type="button" class="social-btn google-btn" aria-label="Continue with Google">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path fill="#4285F4"
+              d="M43.6 24.5c0-1.5-.1-2.9-.4-4.3H24v8.1h11a9.4 9.4 0 0 1-4.1 6.2v5.2h6.7c3.9-3.6 6-8.9 6-15.2Z" />
+            <path fill="#34A853"
+              d="M24 44c5.5 0 10.1-1.8 13.5-4.9l-6.7-5.2c-1.8 1.2-4.1 2-6.8 2-5.2 0-9.6-3.5-11.2-8.2H5.9v5.3A20 20 0 0 0 24 44Z" />
+            <path fill="#FBBC05" d="M12.8 27.7a12 12 0 0 1 0-7.4V15H5.9a20 20 0 0 0 0 18l6.9-5.3Z" />
+            <path fill="#EA4335"
+              d="M24 12.1c3 0 5.7 1 7.8 3.1l5.9-5.9C34.1 6 29.5 4 24 4A20 20 0 0 0 5.9 15l6.9 5.3c1.6-4.7 6-8.2 11.2-8.2Z" />
+          </svg>
+          <span>Google</span>
+        </button>
+
+      </div>
+
+      <!-- Login Link -->
+      <div class="auth-register">
+        <p>Already have an account?</p>
+        <a href="login.html">Login Now</a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="js/auth.js"></script>
+
+</body>
+
+</html>

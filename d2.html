@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BeautyPro Academy</title>
+
+    <meta name="description"
+        content="Build your beauty career with BeautyPro Academy. Explore professional cosmetology, hair, esthetics and nail programs.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <!-- Sidebar Logo -->
+        <div class="sidebar-brand">
+            <a href="index.html">
+                <img src="images/logo.png" alt="BeautyPro Academy">
+            </a>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar-navigation">
+
+            <a href="dashboard.html" class="sidebar-link">
+                <i class="bi bi-grid-1x2"></i>
+                <span>Dashboard Overview</span>
+            </a>
+
+            <a href="d2.html" class="sidebar-link active">
+                <i class="bi bi-mortarboard"></i>
+                <span>My Programs</span>
+            </a>
+
+            <a href="d3.html" class="sidebar-link">
+                <i class="bi bi-clock-history"></i>
+                <span>My Required Hours</span>
+            </a>
+
+            <a href="d4.html" class="sidebar-link">
+                <i class="bi bi-calendar3"></i>
+                <span>Schedule</span>
+            </a>
+
+            <a href="d5.html" class="sidebar-link">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>Licensing Exam Prep</span>
+            </a>
+
+            <a href="d6.html" class="sidebar-link">
+                <i class="bi bi-credit-card"></i>
+                <span>Payments</span>
+            </a>
+
+        </nav>
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            <button type="button" class="sidebar-logout" id="logoutButton">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- Main Area -->
+    <div class="dashboard-main" id="dashboardMain">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu"
+                    aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="header-title">
+                    <h1>My Programs</h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <!-- Notifications -->
+                <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+                    <i class="bi bi-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+
+                <!-- Dark Mode -->
+                <button type="button" class="header-icon-btn theme-toggle" aria-label="Toggle dark mode"
+                    aria-pressed="false">
+                    <i class="bi bi-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="header-icon-btn rtl-toggle" aria-label="Toggle RTL direction"
+                    aria-pressed="false">
+                    <i class="bi bi-arrow-left-right"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="header-profile">
+
+                    <div class="profile-avatar">
+                        <img src="images/student-profile.jpg" alt="Jessica Davis Profile">
+                    </div>
+
+                    <div class="profile-details">
+                        <h4>Jessica Davis</h4>
+                        <p>Beauty Student</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="dashboard-content">
+
+            <!-- SECTION 1: ENROLLED PROGRAMS -->
+            <section class="mp-enrolled-section">
+
+                <div class="mp-page-intro">
+                    <div>
+                        <span class="mp-eyebrow">YOUR EDUCATION JOURNEY</span>
+                        <h2>My Programs</h2>
+                        <p>Explore your enrolled programs and keep track of your learning journey.</p>
+                    </div>
+
+                    <div class="mp-program-count">
+                        <i class="bi bi-mortarboard"></i>
+                        <div>
+                            <strong>01</strong>
+                            <span>Enrolled Program</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mp-enrolled-card">
+
+                    <div class="mp-program-cover">
+                        <img src="images/cosmetology-program.jpg" alt="Professional Cosmetology Program">
+
+                        <span class="mp-program-status">
+                            <i class="bi bi-circle-fill"></i>
+                            In Progress
+                        </span>
+                    </div>
+
+                    <div class="mp-enrolled-details">
+
+                        <div class="mp-program-category">PROFESSIONAL BEAUTY EDUCATION</div>
+
+                        <h3>Professional Cosmetology</h3>
+
+                        <p class="mp-program-description">
+                            Develop essential beauty industry skills through structured lessons,
+                            practical training and supervised student clinic experience.
+                        </p>
+
+                        <div class="mp-program-meta">
+
+                            <div>
+                                <i class="bi bi-calendar3"></i>
+                                <span>Program Duration</span>
+                                <strong>12 Months</strong>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-clock-history"></i>
+                                <span>Required Hours</span>
+                                <strong>600 Hours</strong>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-bar-chart"></i>
+                                <span>Current Progress</span>
+                                <strong>54% Complete</strong>
+                            </div>
+
+                        </div>
+
+                        <div class="mp-program-progress">
+                            <div class="mp-progress-heading">
+                                <span>Overall Program Progress</span>
+                                <strong>54%</strong>
+                            </div>
+
+                            <div class="mp-progress-track">
+                                <div class="mp-progress-fill" style="width:54%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mp-program-actions">
+                            <a href="#mp-modules" class="mp-primary-btn">
+                                Continue Learning
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                            <a href="#mp-resources" class="mp-secondary-btn">
+                                View Resources
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 2: LEARNING MODULES -->
+            <section class="mp-modules-section" id="mp-modules">
+
+                <div class="mp-section-heading">
+                    <div>
+                        <span class="mp-eyebrow">YOUR COURSE CONTENT</span>
+                        <h2>Program Learning Modules</h2>
+                        <p>Follow your course modules and see which topics are ready to explore.</p>
+                    </div>
+
+                    <div class="mp-module-summary">
+                        <span>4 Learning Modules</span>
+                    </div>
+                </div>
+
+                <div class="mp-modules-grid">
+
+                    <!-- Module 1 -->
+                    <article class="mp-module-card mp-module-completed">
+
+                        <div class="mp-module-top">
+                            <div class="mp-module-icon">
+                                <i class="bi bi-stars"></i>
+                            </div>
+
+                            <span class="mp-module-badge completed-badge">
+                                <i class="bi bi-check-circle-fill"></i>
+                                Completed
+                            </span>
+                        </div>
+
+                        <span class="mp-module-number">MODULE 01</span>
+
+                        <h3>Beauty Fundamentals</h3>
+
+                        <p>
+                            Learn foundational beauty concepts, professional hygiene,
+                            safety practices and essential salon standards.
+                        </p>
+
+                        <div class="mp-module-footer">
+                            <span><i class="bi bi-journal-text"></i> 08 Lessons</span>
+                            <strong>100%</strong>
+                        </div>
+
+                        <div class="mp-module-progress">
+                            <span style="width:100%;"></span>
+                        </div>
+
+                        <a href="module-details.html" class="mp-module-link">
+                            Review Module <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Module 2 -->
+                    <article class="mp-module-card mp-module-completed">
+
+                        <div class="mp-module-top">
+                            <div class="mp-module-icon">
+                                <i class="bi bi-droplet-half"></i>
+                            </div>
+
+                            <span class="mp-module-badge completed-badge">
+                                <i class="bi bi-check-circle-fill"></i>
+                                Completed
+                            </span>
+                        </div>
+
+                        <span class="mp-module-number">MODULE 02</span>
+
+                        <h3>Skin Care Basics</h3>
+
+                        <p>
+                            Understand skin types, cleansing routines, basic skin analysis
+                            and essential skincare procedures.
+                        </p>
+
+                        <div class="mp-module-footer">
+                            <span><i class="bi bi-journal-text"></i> 10 Lessons</span>
+                            <strong>100%</strong>
+                        </div>
+
+                        <div class="mp-module-progress">
+                            <span style="width:100%;"></span>
+                        </div>
+
+                        <a href="module-details.html" class="mp-module-link">
+                            Review Module <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Module 3 -->
+                    <article class="mp-module-card mp-module-current">
+
+                        <div class="mp-module-top">
+                            <div class="mp-module-icon">
+                                <i class="bi bi-palette"></i>
+                            </div>
+
+                            <span class="mp-module-badge current-badge">
+                                <i class="bi bi-play-circle-fill"></i>
+                                In Progress
+                            </span>
+                        </div>
+
+                        <span class="mp-module-number">MODULE 03</span>
+
+                        <h3>Makeup Techniques</h3>
+
+                        <p>
+                            Explore makeup tools, skin preparation, application techniques
+                            and professional makeup practices.
+                        </p>
+
+                        <div class="mp-module-footer">
+                            <span><i class="bi bi-journal-text"></i> 12 Lessons</span>
+                            <strong>45%</strong>
+                        </div>
+
+                        <div class="mp-module-progress">
+                            <span style="width:45%;"></span>
+                        </div>
+
+                        <a href="module-details.html" class="mp-module-link">
+                            Continue Module <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- Module 4 -->
+                    <article class="mp-module-card mp-module-upcoming">
+
+                        <div class="mp-module-top">
+                            <div class="mp-module-icon">
+                                <i class="bi bi-scissors"></i>
+                            </div>
+
+                            <span class="mp-module-badge upcoming-badge">
+                                <i class="bi bi-lock-fill"></i>
+                                Upcoming
+                            </span>
+                        </div>
+
+                        <span class="mp-module-number">MODULE 04</span>
+
+                        <h3>Hair Styling</h3>
+
+                        <p>
+                            Discover hair care fundamentals, styling tools,
+                            hair preparation and professional styling methods.
+                        </p>
+
+                        <div class="mp-module-footer">
+                            <span><i class="bi bi-journal-text"></i> 10 Lessons</span>
+                            <strong>0%</strong>
+                        </div>
+
+                        <div class="mp-module-progress">
+                            <span style="width:0%;"></span>
+                        </div>
+
+                        <span class="mp-module-locked">
+                            Available after completing the previous module
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 3: LEARNING RESOURCES & NEXT STEPS -->
+            <section class="mp-resources-section" id="mp-resources">
+
+                <div class="mp-section-heading">
+                    <div>
+                        <span class="mp-eyebrow">KEEP MOVING FORWARD</span>
+                        <h2>Learning Resources & Next Steps</h2>
+                        <p>Access useful learning materials and stay prepared for your next milestone.</p>
+                    </div>
+                </div>
+
+                <div class="mp-resources-layout">
+
+                    <!-- Resources -->
+                    <div class="mp-resources-card">
+
+                        <div class="mp-resource-heading">
+                            <div>
+                                <h3>Study Resources</h3>
+                                <p>Materials to support your learning.</p>
+                            </div>
+
+                            <i class="bi bi-folder2-open"></i>
+                        </div>
+
+                        <div class="mp-resource-list">
+
+                            <a href="#" class="mp-resource-item" target="_blank">
+                                <div class="mp-resource-file pdf-file">
+                                    <i class="bi bi-file-earmark-pdf"></i>
+                                </div>
+
+                                <div class="mp-resource-info">
+                                    <strong>Beauty Fundamentals Notes</strong>
+                                    <span>PDF Study Material</span>
+                                </div>
+
+                                <i class="bi bi-download mp-resource-download"></i>
+                            </a>
+
+                            <a href="#" class="mp-resource-item" target="_blank">
+                                <div class="mp-resource-file guide-file">
+                                    <i class="bi bi-journal-bookmark"></i>
+                                </div>
+
+                                <div class="mp-resource-info">
+                                    <strong>Basic Skin Care Guide</strong>
+                                    <span>PDF Learning Guide</span>
+                                </div>
+
+                                <i class="bi bi-download mp-resource-download"></i>
+                            </a>
+
+                            <a href="#" class="mp-resource-item" target="_blank">
+                                <div class="mp-resource-file practice-file">
+                                    <i class="bi bi-palette"></i>
+                                </div>
+
+                                <div class="mp-resource-info">
+                                    <strong>Makeup Practice Workbook</strong>
+                                    <span>Practice Worksheet</span>
+                                </div>
+
+                                <i class="bi bi-download mp-resource-download"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Next Milestone -->
+                    <div class="mp-milestone-card">
+
+                        <div class="mp-milestone-heading">
+                            <div>
+                                <span>NEXT LEARNING MILESTONE</span>
+                                <h3>Complete Makeup Techniques</h3>
+                            </div>
+
+                            <div class="mp-milestone-icon">
+                                <i class="bi bi-trophy"></i>
+                            </div>
+                        </div>
+
+                        <p>
+                            Finish the remaining lessons in your current module
+                            to move forward in your cosmetology program.
+                        </p>
+
+                        <div class="mp-milestone-progress">
+                            <div class="mp-milestone-progress-top">
+                                <span>Module Completion</span>
+                                <strong>45%</strong>
+                            </div>
+
+                            <div class="mp-progress-track">
+                                <div class="mp-progress-fill" style="width:45%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mp-milestone-checklist">
+
+                            <div class="mp-milestone-step done">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Complete skin preparation lesson</span>
+                            </div>
+
+                            <div class="mp-milestone-step done">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Review makeup tools and products</span>
+                            </div>
+
+                            <div class="mp-milestone-step">
+                                <i class="bi bi-circle"></i>
+                                <span>Complete practical makeup exercise</span>
+                            </div>
+
+                        </div>
+
+                        <a href="module-details.html" class="mp-milestone-btn">
+                            Continue Your Learning
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="logout-modal" id="logoutModal" aria-hidden="true">
+
+        <div class="logout-modal-backdrop"></div>
+
+        <div class="logout-modal-card" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+
+            <div class="logout-modal-icon">
+                <i class="bi bi-box-arrow-right"></i>
+            </div>
+
+            <h2 id="logoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to logout from your account?</p>
+
+            <div class="logout-modal-actions">
+                <button type="button" class="logout-no" id="cancelLogout">
+                    No, Stay
+                </button>
+
+                <button type="button" class="logout-yes" id="confirmLogout">
+                    Yes, Logout
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

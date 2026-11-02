@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BeautyPro Academy</title>
+
+    <meta name="description"
+        content="Build your beauty career with BeautyPro Academy. Explore professional cosmetology, hair, esthetics and nail programs.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <!-- Sidebar Logo -->
+        <div class="sidebar-brand">
+            <a href="index.html">
+                <img src="images/logo.png" alt="BeautyPro Academy">
+            </a>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar-navigation">
+
+            <a href="dashboard.html" class="sidebar-link">
+                <i class="bi bi-grid-1x2"></i>
+                <span>Dashboard Overview</span>
+            </a>
+
+            <a href="d2.html" class="sidebar-link">
+                <i class="bi bi-mortarboard"></i>
+                <span>My Programs</span>
+            </a>
+
+            <a href="d3.html" class="sidebar-link">
+                <i class="bi bi-clock-history"></i>
+                <span>My Required Hours</span>
+            </a>
+
+            <a href="d4.html" class="sidebar-link active">
+                <i class="bi bi-calendar3"></i>
+                <span>Schedule</span>
+            </a>
+
+            <a href="d5.html" class="sidebar-link">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>Licensing Exam Prep</span>
+            </a>
+
+            <a href="d6.html" class="sidebar-link">
+                <i class="bi bi-credit-card"></i>
+                <span>Payments</span>
+            </a>
+
+        </nav>
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            <button type="button" class="sidebar-logout" id="logoutButton">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- Main Area -->
+    <div class="dashboard-main" id="dashboardMain">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu"
+                    aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="header-title">
+                    <h1>Schedule</h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <!-- Notifications -->
+                <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+                    <i class="bi bi-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+
+                <!-- Dark Mode -->
+                <button type="button" class="header-icon-btn theme-toggle" aria-label="Toggle dark mode"
+                    aria-pressed="false">
+                    <i class="bi bi-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="header-icon-btn rtl-toggle" aria-label="Toggle RTL direction"
+                    aria-pressed="false">
+                    <i class="bi bi-arrow-left-right"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="header-profile">
+
+                    <div class="profile-avatar">
+                        <img src="images/student-profile.jpg" alt="Jessica Davis Profile">
+                    </div>
+
+                    <div class="profile-details">
+                        <h4>Jessica Davis</h4>
+                        <p>Beauty Student</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="dashboard-content">
+
+            <!-- SECTION 1: WEEKLY SCHEDULE -->
+            <section class="cs-weekly-section">
+
+                <div class="cs-section-heading">
+                    <div>
+                        <span class="cs-eyebrow">YOUR LEARNING CALENDAR</span>
+                        <h2>Weekly Class Schedule</h2>
+                        <p>Explore your classes, practical sessions, and supervised clinic training.</p>
+                    </div>
+
+                    <div class="cs-week-navigation">
+                        <button type="button" id="csPrevWeek" aria-label="Previous week">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        <span id="csWeekLabel">November 2 – 8, 2026</span>
+                        <button type="button" id="csNextWeek" aria-label="Next week">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cs-calendar-panel">
+                    <div class="cs-calendar-top">
+                        <div>
+                            <h3>Select a Day</h3>
+                            <p>Choose a date to view your scheduled sessions.</p>
+                        </div>
+                        <button type="button" class="cs-today-btn" id="csTodayBtn">
+                            <i class="bi bi-calendar-event"></i> Today
+                        </button>
+                    </div>
+
+                    <div class="cs-week-days" id="csWeekDays"></div>
+
+                    <div class="cs-selected-day">
+                        <div class="cs-selected-day-heading">
+                            <div>
+                                <span class="cs-day-eyebrow">DAILY SCHEDULE</span>
+                                <h3 id="csSelectedDate">Monday, November 2</h3>
+                            </div>
+                            <span class="cs-session-count" id="csSessionCount">0 Sessions</span>
+                        </div>
+
+                        <div class="cs-day-sessions" id="csDaySessions"></div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 2: UPCOMING SESSIONS -->
+            <section class="cs-upcoming-section">
+
+                <div class="cs-section-heading">
+                    <div>
+                        <span class="cs-eyebrow">WHAT'S COMING NEXT</span>
+                        <h2>Upcoming Classes & Clinic Sessions</h2>
+                        <p>Stay informed about your upcoming training activities.</p>
+                    </div>
+
+                    <a href="my-programs.html" class="cs-text-link">
+                        My Programs <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <div class="cs-upcoming-grid">
+
+                    <article class="cs-upcoming-card">
+                        <div class="cs-upcoming-top">
+                            <span class="cs-type-badge cs-type-theory">
+                                <i class="bi bi-book"></i> Theory Class
+                            </span>
+                            <span class="cs-upcoming-date">NOV 03</span>
+                        </div>
+
+                        <h3>Advanced Skin Care</h3>
+                        <p>Learn advanced skin analysis, treatment procedures, and professional skincare techniques.</p>
+
+                        <div class="cs-upcoming-details">
+                            <div><i class="bi bi-clock"></i><span>09:00 AM – 12:00 PM</span></div>
+                            <div><i class="bi bi-person"></i><span>Emma Wilson</span></div>
+                            <div><i class="bi bi-geo-alt"></i><span>Classroom A-02</span></div>
+                            <div><i class="bi bi-hourglass"></i><span>3 Training Hours</span></div>
+                        </div>
+
+                        <div class="cs-upcoming-bottom">
+                            <span><i class="bi bi-calendar-check"></i> Scheduled</span>
+                            <span>Tuesday</span>
+                        </div>
+                    </article>
+
+                    <article class="cs-upcoming-card">
+                        <div class="cs-upcoming-top">
+                            <span class="cs-type-badge cs-type-practical">
+                                <i class="bi bi-brush"></i> Practical Class
+                            </span>
+                            <span class="cs-upcoming-date">NOV 04</span>
+                        </div>
+
+                        <h3>Professional Makeup Practice</h3>
+                        <p>Develop hands-on makeup application, blending, and professional finishing skills.</p>
+
+                        <div class="cs-upcoming-details">
+                            <div><i class="bi bi-clock"></i><span>10:00 AM – 02:00 PM</span></div>
+                            <div><i class="bi bi-person"></i><span>Sophia Martinez</span></div>
+                            <div><i class="bi bi-geo-alt"></i><span>Beauty Lab B-01</span></div>
+                            <div><i class="bi bi-hourglass"></i><span>4 Training Hours</span></div>
+                        </div>
+
+                        <div class="cs-upcoming-bottom">
+                            <span><i class="bi bi-calendar-check"></i> Scheduled</span>
+                            <span>Wednesday</span>
+                        </div>
+                    </article>
+
+                    <article class="cs-upcoming-card">
+                        <div class="cs-upcoming-top">
+                            <span class="cs-type-badge cs-type-clinic">
+                                <i class="bi bi-person-workspace"></i> Clinic Session
+                            </span>
+                            <span class="cs-upcoming-date">NOV 06</span>
+                        </div>
+
+                        <h3>Student Salon Clinic</h3>
+                        <p>Practice supervised client services and strengthen your professional salon experience.</p>
+
+                        <div class="cs-upcoming-details">
+                            <div><i class="bi bi-clock"></i><span>09:00 AM – 01:00 PM</span></div>
+                            <div><i class="bi bi-person"></i><span>Olivia Bennett</span></div>
+                            <div><i class="bi bi-geo-alt"></i><span>Student Salon Floor</span></div>
+                            <div><i class="bi bi-hourglass"></i><span>4 Training Hours</span></div>
+                        </div>
+
+                        <div class="cs-upcoming-bottom">
+                            <span><i class="bi bi-calendar-check"></i> Scheduled</span>
+                            <span>Friday</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 3: REMINDERS & PREPARATION -->
+            <section class="cs-preparation-section">
+
+                <div class="cs-section-heading">
+                    <div>
+                        <span class="cs-eyebrow">STAY PREPARED</span>
+                        <h2>Schedule Reminders & Preparation</h2>
+                        <p>Everything you need to know before attending your next training sessions.</p>
+                    </div>
+                </div>
+
+                <div class="cs-preparation-grid">
+
+                    <div class="cs-reminder-panel">
+                        <div class="cs-panel-title">
+                            <span class="cs-panel-icon"><i class="bi bi-bell"></i></span>
+                            <div>
+                                <h3>Important Reminders</h3>
+                                <p>Keep these upcoming training details in mind.</p>
+                            </div>
+                        </div>
+
+                        <div class="cs-reminder-list">
+                            <div class="cs-reminder-item">
+                                <span class="cs-reminder-symbol"><i class="bi bi-calendar2-check"></i></span>
+                                <div>
+                                    <h4>Upcoming Theory Class</h4>
+                                    <p>Advanced Skin Care – November 3, 9:00 AM.</p>
+                                </div>
+                            </div>
+
+                            <div class="cs-reminder-item">
+                                <span class="cs-reminder-symbol"><i class="bi bi-brush"></i></span>
+                                <div>
+                                    <h4>Practical Training</h4>
+                                    <p>Bring your professional makeup kit for the November 4 session.</p>
+                                </div>
+                            </div>
+
+                            <div class="cs-reminder-item">
+                                <span class="cs-reminder-symbol"><i class="bi bi-person-check"></i></span>
+                                <div>
+                                    <h4>Student Clinic Session</h4>
+                                    <p>Wear your academy uniform for the November 6 salon session.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cs-checklist-panel">
+                        <div class="cs-panel-title">
+                            <span class="cs-panel-icon"><i class="bi bi-clipboard2-check"></i></span>
+                            <div>
+                                <h3>Before Your Next Class</h3>
+                                <p>Complete this quick preparation checklist.</p>
+                            </div>
+                        </div>
+
+                        <div class="cs-checklist" id="csChecklist">
+                            <label class="cs-checklist-item">
+                                <input type="checkbox" data-task="notes">
+                                <span>Review previous class notes</span>
+                            </label>
+
+                            <label class="cs-checklist-item">
+                                <input type="checkbox" data-task="kit">
+                                <span>Prepare your training kit</span>
+                            </label>
+
+                            <label class="cs-checklist-item">
+                                <input type="checkbox" data-task="uniform">
+                                <span>Keep your uniform and ID ready</span>
+                            </label>
+
+                            <label class="cs-checklist-item">
+                                <input type="checkbox" data-task="schedule">
+                                <span>Confirm class timing and location</span>
+                            </label>
+                        </div>
+
+                        <div class="cs-checklist-progress">
+                            <div class="cs-checklist-progress-top">
+                                <span>Preparation Progress</span>
+                                <strong id="csChecklistCount">0 of 4 completed</strong>
+                            </div>
+                            <div class="cs-checklist-track">
+                                <div class="cs-checklist-fill" id="csChecklistFill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="logout-modal" id="logoutModal" aria-hidden="true">
+
+        <div class="logout-modal-backdrop"></div>
+
+        <div class="logout-modal-card" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+
+            <div class="logout-modal-icon">
+                <i class="bi bi-box-arrow-right"></i>
+            </div>
+
+            <h2 id="logoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to logout from your account?</p>
+
+            <div class="logout-modal-actions">
+                <button type="button" class="logout-no" id="cancelLogout">
+                    No, Stay
+                </button>
+
+                <button type="button" class="logout-yes" id="confirmLogout">
+                    Yes, Logout
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

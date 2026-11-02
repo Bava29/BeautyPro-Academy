@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BeautyPro Academy</title>
+
+    <meta name="description"
+        content="Build your beauty career with BeautyPro Academy. Explore professional cosmetology, hair, esthetics and nail programs.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <!-- Sidebar Logo -->
+        <div class="sidebar-brand">
+            <a href="index.html">
+                <img src="images/logo.png" alt="BeautyPro Academy">
+            </a>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar-navigation">
+
+            <a href="dashboard.html" class="sidebar-link">
+                <i class="bi bi-grid-1x2"></i>
+                <span>Dashboard Overview</span>
+            </a>
+
+            <a href="d2.html" class="sidebar-link">
+                <i class="bi bi-mortarboard"></i>
+                <span>My Programs</span>
+            </a>
+
+            <a href="d3.html" class="sidebar-link active">
+                <i class="bi bi-clock-history"></i>
+                <span>My Required Hours</span>
+            </a>
+
+            <a href="d4.html" class="sidebar-link">
+                <i class="bi bi-calendar3"></i>
+                <span>Schedule</span>
+            </a>
+
+            <a href="d5.html" class="sidebar-link">
+                <i class="bi bi-journal-bookmark"></i>
+                <span>Licensing Exam Prep</span>
+            </a>
+
+            <a href="d6.html" class="sidebar-link">
+                <i class="bi bi-credit-card"></i>
+                <span>Payments</span>
+            </a>
+
+        </nav>
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            <button type="button" class="sidebar-logout" id="logoutButton">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- Main Area -->
+    <div class="dashboard-main" id="dashboardMain">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="header-left">
+
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open navigation menu"
+                    aria-expanded="false">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="header-title">
+                    <h1>My Required Hours</h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <!-- Notifications -->
+                <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+                    <i class="bi bi-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+
+                <!-- Dark Mode -->
+                <button type="button" class="header-icon-btn theme-toggle" aria-label="Toggle dark mode"
+                    aria-pressed="false">
+                    <i class="bi bi-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="header-icon-btn rtl-toggle" aria-label="Toggle RTL direction"
+                    aria-pressed="false">
+                    <i class="bi bi-arrow-left-right"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="header-profile">
+
+                    <div class="profile-avatar">
+                        <img src="images/student-profile.jpg" alt="Jessica Davis Profile">
+                    </div>
+
+                    <div class="profile-details">
+                        <h4>Jessica Davis</h4>
+                        <p>Beauty Student</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="dashboard-content">
+
+            <!-- SECTION 1: TRAINING HOURS OVERVIEW -->
+            <section class="rh-overview-section">
+
+                <div class="rh-section-heading">
+                    <div>
+                        <span class="rh-eyebrow">YOUR TRAINING JOURNEY</span>
+                        <h2>My Required Hours</h2>
+                        <p>Track your completed training hours and stay on target toward graduation.</p>
+                    </div>
+                    <span class="rh-status-badge">
+                        <i class="bi bi-hourglass-split"></i>
+                        In Progress
+                    </span>
+                </div>
+
+                <div class="rh-overview-grid">
+
+                    <div class="rh-overview-card rh-total-card">
+                        <div class="rh-card-top">
+                            <span>Total Required Hours</span>
+                            <div class="rh-icon"><i class="bi bi-clock-history"></i></div>
+                        </div>
+                        <h3>600 <small>hrs</small></h3>
+                        <p>Your complete program requirement</p>
+                    </div>
+
+                    <div class="rh-overview-card">
+                        <div class="rh-card-top">
+                            <span>Completed Hours</span>
+                            <div class="rh-icon"><i class="bi bi-check2-circle"></i></div>
+                        </div>
+                        <h3>320 <small>hrs</small></h3>
+                        <p>Successfully completed training</p>
+                    </div>
+
+                    <div class="rh-overview-card">
+                        <div class="rh-card-top">
+                            <span>Remaining Hours</span>
+                            <div class="rh-icon"><i class="bi bi-hourglass"></i></div>
+                        </div>
+                        <h3>280 <small>hrs</small></h3>
+                        <p>Hours left to complete</p>
+                    </div>
+
+                    <div class="rh-overview-card">
+                        <div class="rh-card-top">
+                            <span>Completion Rate</span>
+                            <div class="rh-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        </div>
+                        <h3>53.3<small>%</small></h3>
+                        <p>Overall training progress</p>
+                    </div>
+
+                </div>
+
+                <div class="rh-progress-panel">
+                    <div class="rh-progress-info">
+                        <div>
+                            <h4>Overall Training Progress</h4>
+                            <p>You're making steady progress toward completing your program.</p>
+                        </div>
+                        <strong>53.3%</strong>
+                    </div>
+
+                    <div class="rh-progress-track">
+                        <div class="rh-progress-fill" style="width: 53.3%;"></div>
+                    </div>
+
+                    <div class="rh-progress-footer">
+                        <span>320 hours completed</span>
+                        <span>600 hours required</span>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 2: HOURS BREAKDOWN -->
+            <section class="rh-breakdown-section">
+
+                <div class="rh-section-title">
+                    <div>
+                        <span class="rh-eyebrow">HOUR DISTRIBUTION</span>
+                        <h2>Training Hours Breakdown</h2>
+                        <p>See how your hours are distributed across different training categories.</p>
+                    </div>
+                </div>
+
+                <div class="rh-breakdown-grid">
+
+                    <div class="rh-breakdown-card">
+                        <div class="rh-breakdown-header">
+                            <div class="rh-category-icon">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <span class="rh-category-tag">Theory</span>
+                        </div>
+
+                        <h3>120 <small>/ 200 hrs</small></h3>
+                        <p>Classroom learning and beauty fundamentals.</p>
+
+                        <div class="rh-category-progress">
+                            <div class="rh-category-progress-fill" style="width: 60%;"></div>
+                        </div>
+
+                        <div class="rh-category-footer">
+                            <strong>60% Completed</strong>
+                            <span>80 hrs left</span>
+                        </div>
+                    </div>
+
+                    <div class="rh-breakdown-card">
+                        <div class="rh-breakdown-header">
+                            <div class="rh-category-icon">
+                                <i class="bi bi-brush"></i>
+                            </div>
+                            <span class="rh-category-tag">Practical</span>
+                        </div>
+
+                        <h3>140 <small>/ 250 hrs</small></h3>
+                        <p>Hands-on practice and technical skill development.</p>
+
+                        <div class="rh-category-progress">
+                            <div class="rh-category-progress-fill" style="width: 56%;"></div>
+                        </div>
+
+                        <div class="rh-category-footer">
+                            <strong>56% Completed</strong>
+                            <span>110 hrs left</span>
+                        </div>
+                    </div>
+
+                    <div class="rh-breakdown-card">
+                        <div class="rh-breakdown-header">
+                            <div class="rh-category-icon">
+                                <i class="bi bi-person-workspace"></i>
+                            </div>
+                            <span class="rh-category-tag">Student Clinic</span>
+                        </div>
+
+                        <h3>60 <small>/ 150 hrs</small></h3>
+                        <p>Supervised salon experience and client services.</p>
+
+                        <div class="rh-category-progress">
+                            <div class="rh-category-progress-fill" style="width: 40%;"></div>
+                        </div>
+
+                        <div class="rh-category-footer">
+                            <strong>40% Completed</strong>
+                            <span>90 hrs left</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="rh-breakdown-note">
+                    <i class="bi bi-info-circle"></i>
+                    <p>Complete all required training categories to meet your program's hour requirements.</p>
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 3: ATTENDANCE HISTORY -->
+            <section class="rh-attendance-section">
+
+                <div class="rh-attendance-heading">
+                    <div>
+                        <span class="rh-eyebrow">YOUR RECENT ACTIVITY</span>
+                        <h2>Recent Attendance & Hours Log</h2>
+                        <p>Review your recently recorded training sessions and attendance.</p>
+                    </div>
+
+                    <a href="attendance-history.html" class="rh-view-all">
+                        View Full History <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <div class="rh-attendance-table-wrap">
+                    <table class="rh-attendance-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Training Session</th>
+                                <th>Category</th>
+                                <th>Duration</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Nov 02, 2026</strong>
+                                    <small>Monday</small>
+                                </td>
+                                <td>
+                                    <div class="rh-session-info">
+                                        <span class="rh-session-icon"><i class="bi bi-book"></i></span>
+                                        <span>Advanced Skin Care</span>
+                                    </div>
+                                </td>
+                                <td>Theory</td>
+                                <td><strong>4 hrs</strong></td>
+                                <td><span class="rh-attendance-status present">Present</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Oct 31, 2026</strong>
+                                    <small>Saturday</small>
+                                </td>
+                                <td>
+                                    <div class="rh-session-info">
+                                        <span class="rh-session-icon"><i class="bi bi-brush"></i></span>
+                                        <span>Professional Makeup Practice</span>
+                                    </div>
+                                </td>
+                                <td>Practical</td>
+                                <td><strong>5 hrs</strong></td>
+                                <td><span class="rh-attendance-status present">Present</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Oct 30, 2026</strong>
+                                    <small>Friday</small>
+                                </td>
+                                <td>
+                                    <div class="rh-session-info">
+                                        <span class="rh-session-icon"><i class="bi bi-person-workspace"></i></span>
+                                        <span>Student Salon Training</span>
+                                    </div>
+                                </td>
+                                <td>Clinic</td>
+                                <td><strong>4 hrs</strong></td>
+                                <td><span class="rh-attendance-status present">Present</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Oct 29, 2026</strong>
+                                    <small>Thursday</small>
+                                </td>
+                                <td>
+                                    <div class="rh-session-info">
+                                        <span class="rh-session-icon"><i class="bi bi-scissors"></i></span>
+                                        <span>Hair Styling Techniques</span>
+                                    </div>
+                                </td>
+                                <td>Practical</td>
+                                <td><strong>3 hrs</strong></td>
+                                <td><span class="rh-attendance-status absent">Absent</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Oct 28, 2026</strong>
+                                    <small>Wednesday</small>
+                                </td>
+                                <td>
+                                    <div class="rh-session-info">
+                                        <span class="rh-session-icon"><i class="bi bi-book"></i></span>
+                                        <span>Beauty Science Fundamentals</span>
+                                    </div>
+                                </td>
+                                <td>Theory</td>
+                                <td><strong>4 hrs</strong></td>
+                                <td><span class="rh-attendance-status present">Present</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="rh-attendance-footer">
+                    <div>
+                        <i class="bi bi-calendar-check"></i>
+                        <span>Recent attendance records</span>
+                    </div>
+                    <span>Last 5 sessions</span>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="logout-modal" id="logoutModal" aria-hidden="true">
+
+        <div class="logout-modal-backdrop"></div>
+
+        <div class="logout-modal-card" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+
+            <div class="logout-modal-icon">
+                <i class="bi bi-box-arrow-right"></i>
+            </div>
+
+            <h2 id="logoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to logout from your account?</p>
+
+            <div class="logout-modal-actions">
+                <button type="button" class="logout-no" id="cancelLogout">
+                    No, Stay
+                </button>
+
+                <button type="button" class="logout-yes" id="confirmLogout">
+                    Yes, Logout
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
