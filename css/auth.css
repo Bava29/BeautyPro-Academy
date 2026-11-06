@@ -914,3 +914,66 @@ html.dark-mode .register-terms .remember-option {
         padding: 24px 15px;
     }
 }
+
+/* =========================================
+   AUTH HEADER CONTROLS - RTL POSITION
+========================================= */
+
+html[dir="rtl"] .auth-header {
+    justify-content: flex-start !important;
+}
+
+html[dir="rtl"] .auth-controls {
+    display: flex;
+    flex-direction: row-reverse;
+    direction: ltr;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Keep both toggles aligned */
+html[dir="rtl"] .auth-control-btn {
+    flex-shrink: 0;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    html[dir="rtl"] .auth-header {
+        justify-content: flex-start !important;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    html[dir="rtl"] .auth-controls {
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+}
+
+/* RTL - Both Toggles at Absolute Left */
+
+html[dir="rtl"] .auth-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start !important;
+    direction: ltr !important;
+}
+
+html[dir="rtl"] .auth-controls {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    direction: ltr !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    gap: 12px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    html[dir="rtl"] .auth-header {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+}
