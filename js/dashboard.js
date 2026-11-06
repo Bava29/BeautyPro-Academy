@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const sidebar = document.getElementById("dashboardSidebar");
     const menuToggle = document.getElementById("menuToggle");
+    const sidebarClose = document.getElementById("sidebarClose");
     const sidebarOverlay = document.getElementById("sidebarOverlay");
 
     function openSidebar() {
@@ -34,6 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
             openSidebar();
         }
     });
+
+    sidebarClose.addEventListener("click", closeSidebar);
 
     sidebarOverlay.addEventListener("click", closeSidebar);
 
@@ -75,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const logoPath = isDark ? "images/logo-white.png" : "images/logo.png";
         document.querySelectorAll('img[src="images/logo.png"], img[src="images/logo-white.png"]')
             .forEach(function (logo) {
+                if (logo.closest(".footer-logo")) return;
                 logo.setAttribute("src", logoPath);
             });
     }

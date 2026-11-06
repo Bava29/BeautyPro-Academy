@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const logoPath = isDark ? "images/logo-white.png" : "images/logo.png";
     document.querySelectorAll('img[src="images/logo.png"], img[src="images/logo-white.png"]')
       .forEach(function (logo) {
+        if (logo.closest(".footer-logo")) return;
         logo.setAttribute("src", logoPath);
       });
   }
