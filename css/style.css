@@ -7948,7 +7948,7 @@ html[dir="rtl"] .bp2-transformation-secondary:hover i {
 
 .bp-about-hero-content h1 {
     font-family: var(--heading-font);
-    font-size: clamp(48px, 6vw, 76px);
+    font-size: clamp(48px, 6vw, 70px);
     font-weight: 600;
     line-height: 1.12;
     color: #fff;
@@ -10369,7 +10369,7 @@ html[dir="rtl"] .bp-about-final-secondary:hover i {
     color: var(--primary-color);
     font-size: 18px;
     flex-shrink: 0;
-    margin-top: 2px;
+    margin-top: -3px;
 }
 
 .bp-programs-bottom p {
@@ -10757,7 +10757,7 @@ html[dir="rtl"] .bp-programs-bottom {
     color: var(--primary-color);
     font-size: 17px;
     flex-shrink: 0;
-    margin-top: 2px;
+    margin-top: 0;
 }
 
 .bp-learning-panel-footer p {
@@ -14682,6 +14682,8 @@ html[dir="rtl"] .bp-instructor-cta-primary i {
 .bp-salon-services-note i {
     color: var(--primary-color);
     font-size: 19px;
+    flex-shrink: 0;
+    margin-top: -3px;
 }
 
 .bp-salon-services-note p {
@@ -27196,4 +27198,142 @@ html.dark-mode .bp-contact-side-point span {
 html.dark-mode .bp-contact-side-decoration {
     color: #F2C6A8;
     opacity: 0.10;
+}
+
+/* Remove only the circle background */
+.bp-programs-bottom .bp-programs-bottom-icon {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Keep the icon visible */
+.bp-programs-bottom .bp-programs-bottom-icon i {
+    display: inline-block !important;
+    color: var(--primary-color) !important;
+    font-size: 22px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Both light and dark modes */
+html.dark-mode .bp-programs-bottom .bp-programs-bottom-icon,
+html:not(.dark-mode) .bp-programs-bottom .bp-programs-bottom-icon {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* iPad Mini - Center Last Facility Highlight */
+@media (min-width: 601px) and (max-width: 820px) {
+
+    .bp-about-facility-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        justify-items: stretch !important;
+    }
+
+    .bp-facility-highlight:last-child {
+        grid-column: 1 / -1 !important;
+        width: fit-content !important;
+        max-width: 100% !important;
+        justify-self: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+}
+
+/* iPad Mini - Center Last Training Highlight */
+@media (min-width: 601px) and (max-width: 820px) {
+
+    .bp-training-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .bp-training-highlight:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: fit-content;
+        max-width: 100%;
+    }
+
+}
+
+/* Mobile - Experience Circle Below Image */
+@media (max-width: 600px) {
+
+    .bp-featured-instructor {
+        gap: 140px;
+    }
+
+    .bp-instructor-experience {
+        top: calc(100% + 14px);
+        right: auto;
+        bottom: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+@media (max-width: 600px) {
+    .bp-instructor-experience {
+        width: 120px !important;
+        height: 120px !important;
+        min-width: 120px;
+        min-height: 120px;
+        padding: 18px !important;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* SUCCESS STATISTICS - MOBILE ALIGNMENT FIX */
+@media (max-width: 480px) {
+
+    .bp-success-stats {
+        display: flex !important;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 22px 18px;
+    }
+
+    .bp-success-stat {
+        display: grid !important;
+        grid-template-columns: 85px minmax(0, 1fr);
+        align-items: center;
+        justify-content: initial;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .bp-success-stat strong {
+        width: 85px;
+        font-size: 35px;
+        line-height: 1.2;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .bp-success-stat span {
+        display: block;
+        min-width: 0;
+        text-align: left;
+        line-height: 1.4;
+        overflow-wrap: break-word;
+    }
+
+    .bp-success-divider {
+        display: none !important;
+    }
+
+    .bp-success-cta {
+        width: 100%;
+        max-width: 100%;
+        margin: 5px 0 0;
+    }
 }
