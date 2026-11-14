@@ -17983,6 +17983,30 @@ html[dir="rtl"] .bp-location-bottom-text {
 
 }
 
+/* iPad Mini - Center the Home 2 philosophy intro */
+@media (min-width: 601px) and (max-width: 820px) {
+    .bp2-philosophy-heading {
+        text-align: center;
+    }
+
+    .bp2-philosophy-heading .bp2-philosophy-small,
+    .bp2-philosophy-heading h2,
+    .bp2-philosophy-heading>p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .bp2-philosophy-heading>p {
+        max-width: 600px;
+    }
+
+    .bp2-philosophy-heading-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 
 /* =====================================================
@@ -26959,6 +26983,33 @@ html:not(.dark-mode) .bp-path-career span {
     opacity: 1;
 }
 
+/* Programs page cards: keep headings accented and make supporting copy easy to read. */
+html:not(.dark-mode) .bp-programs-explore .bp-program-content>p,
+html:not(.dark-mode) .bp-programs-explore .bp-program-focus span {
+    color: #211914;
+    opacity: 1;
+}
+
+/* Center the final homepage hero feature on mobile. */
+@media (max-width: 600px) {
+    .bp-hero-features .bp-hero-feature:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        justify-content: center;
+    }
+
+    .bp-academy-experience {
+        padding: 8px;
+    }
+
+    .bp-experience-text {
+        max-width: 58px;
+        font-size: 10px;
+        line-height: 1.15;
+        overflow-wrap: break-word;
+    }
+}
+
 html:not(.dark-mode) .bp-about-learning-stage-number {
     opacity: .65;
 }
@@ -27335,5 +27386,56 @@ html:not(.dark-mode) .bp-programs-bottom .bp-programs-bottom-icon {
         width: 100%;
         max-width: 100%;
         margin: 5px 0 0;
+    }
+}
+
+/* iPad Mini - Center Programs eyebrow, heading, and paragraph */
+@media (min-width: 601px) and (max-width: 820px) {
+    .bp-programs-section .bp-programs-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .bp-programs-section .bp-programs-heading-content,
+    .bp-programs-section .bp-programs-intro {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .bp-programs-section .bp-programs-intro {
+        padding-bottom: 0;
+    }
+
+    .bp-programs-section .bp-programs-intro p {
+        width: min(100%, 600px);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+/* iPad Mini - Center Student Salon services intro */
+@media (min-width: 601px) and (max-width: 820px) {
+    .bp-salon-services .bp-salon-services-heading {
+        align-items: center;
+        text-align: center;
+    }
+
+    .bp-salon-services .bp-salon-services-eyebrow,
+    .bp-salon-services .bp-salon-services-heading h2,
+    .bp-salon-services .bp-salon-services-heading>p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .bp-salon-services .bp-salon-services-heading>p {
+        max-width: 620px;
+        margin-bottom: 0;
     }
 }
